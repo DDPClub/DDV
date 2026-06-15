@@ -571,7 +571,7 @@ body::before{
 @media(min-width:620px){.players-grid{grid-template-columns:1fr 1fr}}
 
 /* ======================================================
-   Alpha 0.8.1 — Poker table compact skin
+   Alpha 0.8.1 â Poker table compact skin
    ====================================================== */
 :root{
   --felt:#0D5A34;
@@ -636,7 +636,7 @@ body::before{
   box-shadow:inset 0 0 18px rgba(0,0,0,.25);
 }
 .player-card.active{border-color:var(--gold-lt);box-shadow:0 0 0 2px rgba(232,192,106,.22),0 0 22px rgba(232,192,106,.12),inset 0 0 18px rgba(0,0,0,.25)}
-.player-card.active::before{content:'● AKTIV';position:absolute;right:8px;top:7px;font-size:8px;font-weight:800;color:var(--gold-lt);letter-spacing:.08em}
+.player-card.active::before{content:'â AKTIV';position:absolute;right:8px;top:7px;font-size:8px;font-weight:800;color:var(--gold-lt);letter-spacing:.08em}
 .player-card.folded{opacity:.48;filter:saturate(.65)}
 .player-head{font-size:11px;margin-bottom:7px;padding-right:46px}.player-sub{font-size:10px;color:rgba(217,207,190,.6)}
 .player-actions{margin-top:7px;gap:5px}.small-note{font-size:10px}
@@ -674,8 +674,8 @@ body::before{
 
 
 /* ======================================================
-   DDV Alpha 0.7.0 Online-Test — reine Optik: Online-Pokertisch
-   Keine Änderung an GameEngine, Regeln oder Aktionen
+   DDV Alpha 0.7.0 Online-Test â reine Optik: Online-Pokertisch
+   Keine Ãnderung an GameEngine, Regeln oder Aktionen
    ====================================================== */
 
 :root{
@@ -1217,8 +1217,8 @@ body::before{
 
 
 /* ======================================================
-   DDV Alpha 0.7.0 Online-Test — Start-Setup Button besser erreichbar
-   Reine Optik, keine Regel-/Engine-Änderung
+   DDV Alpha 0.7.0 Online-Test â Start-Setup Button besser erreichbar
+   Reine Optik, keine Regel-/Engine-Ãnderung
    ====================================================== */
 
 /* Der Setup-Button darf NICHT die fixe Poker-Action-Leiste benutzen */
@@ -1285,8 +1285,8 @@ body::before{
 
 
 /* ======================================================
-   DDV Alpha 0.7.0 Online-Test — Karten-Symbole bei kleinen Karten korrigiert
-   Reine Optik, keine Regel-/Engine-Änderung
+   DDV Alpha 0.7.0 Online-Test â Karten-Symbole bei kleinen Karten korrigiert
+   Reine Optik, keine Regel-/Engine-Ãnderung
    ====================================================== */
 
 .card{
@@ -1359,8 +1359,8 @@ body::before{
 
 
 /* ======================================================
-   DDV Alpha 0.7.0 Online-Test — Aktiv-Anzeige kollidiert nicht mehr mit Chips
-   Reine Optik, keine Regel-/Engine-Änderung
+   DDV Alpha 0.7.0 Online-Test â Aktiv-Anzeige kollidiert nicht mehr mit Chips
+   Reine Optik, keine Regel-/Engine-Ãnderung
    ====================================================== */
 
 /* Alte Ecke-Anzeige entfernen */
@@ -1371,7 +1371,7 @@ body::before{
 
 /* Neue dezente Aktiv-Markierung */
 .player-card.active .player-status::before{
-  content:"AKTIV · ";
+  content:"AKTIV Â· ";
   display:inline;
   color:var(--gold-lt);
   font-weight:900;
@@ -1390,7 +1390,7 @@ body::before{
 
 @media(max-width:680px){
   .player-card.active .player-status::before{
-    content:"AKTIV · ";
+    content:"AKTIV Â· ";
     font-size:7px;
   }
   .chip-count{
@@ -1399,7 +1399,7 @@ body::before{
 }
 
 
-/* DDV Alpha 0.7.0 Online-Test — Neue-Hand-Klick Absicherung */
+/* DDV Alpha 0.7.0 Online-Test â Neue-Hand-Klick Absicherung */
 .btn:disabled{
   opacity:.55 !important;
   cursor:not-allowed !important;
@@ -1408,8 +1408,8 @@ body::before{
 
 
 /* ======================================================
-   DDV Alpha 0.7.0 Online-Test — Seat-Position Fix
-   Spieler 1 unten · Spieler 2 links · Spieler 3 oben · Spieler 4 rechts
+   DDV Alpha 0.7.0 Online-Test â Seat-Position Fix
+   Spieler 1 unten Â· Spieler 2 links Â· Spieler 3 oben Â· Spieler 4 rechts
    Reiner Layout-Fix
    ====================================================== */
 
@@ -1491,8 +1491,8 @@ body::before{
 
 
 /* ======================================================
-   DDV Alpha 0.7.0 Online-Test — Layout nach Skizze
-   Spieler 2 und 4 höher, Spieler 3 oben, Spieler 1 unten
+   DDV Alpha 0.7.0 Online-Test â Layout nach Skizze
+   Spieler 2 und 4 hÃ¶her, Spieler 3 oben, Spieler 1 unten
    Reiner Layout-Fix
    ====================================================== */
 
@@ -1570,7 +1570,7 @@ body::before{
 }
 
 
-/* DDV Alpha 0.7.0 — Online-Test UI */
+/* DDV Alpha 0.7.0 â Online-Test UI */
 .online-panel{margin-top:14px;padding:12px;border-radius:14px;border:1px solid rgba(232,192,106,.24);background:rgba(0,0,0,.20)}
 .online-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
 .online-actions .btn{width:100%;max-width:none;min-width:0}
@@ -1620,27 +1620,27 @@ body::before{
       <button class="btn btn-fold" onclick="leaveOnlineRoom()">Trennen</button>
     </div>
     <div id="onlineStatus" class="online-status">Online: nicht verbunden</div>
-    <div id="onlinePlayers" class="online-players">Spieler online: –</div>
+    <div id="onlinePlayers" class="online-players">Spieler online: â</div>
     <div id="onlineLog" class="online-log"></div>
   </div>
 
   <div class="action-dock">
     <button class="btn btn-new-hand" onclick="startGame()">Lokales Spiel starten</button>
   </div>
-  <div class="small-note">PvP = mehrere Sitze auf „Mensch“ stellen. PvE = mindestens ein Sitz „KI“. Gespielt wird Hotseat: der aktive menschliche Spieler macht seinen Zug.</div>
+  <div class="small-note">PvP = mehrere Sitze auf âMenschâ stellen. PvE = mindestens ein Sitz âKIâ. Gespielt wird Hotseat: der aktive menschliche Spieler macht seinen Zug.</div>
 </div>
 
 <div id="table" class="poker-shell" style="display:none">
   <div class="hud-row">
-    <div class="hud-block"><div class="hud-lbl">Aktiv</div><div id="activeInfo" class="hud-val">–</div></div>
+    <div class="hud-block"><div class="hud-lbl">Aktiv</div><div id="activeInfo" class="hud-val">â</div></div>
     <div class="hud-block hud-pot"><div class="hud-lbl">Topf</div><div id="potInfo" class="hud-val">Pot: 0</div></div>
     <div class="hud-block"><div class="hud-lbl">Einsatz</div><div id="betInfo" class="hud-val">Bet: 0</div></div>
   </div>
   <div class="status-row">
     <div id="phaseInfo">Status: Setup</div>
-    <div id="dealerInfo">Dealer: –</div>
+    <div id="dealerInfo">Dealer: â</div>
   </div>
-  <div id="winnerInfo">–</div>
+  <div id="winnerInfo">â</div>
   <div class="zone doven-zone">
     <div class="zone-label">Doven Karten</div>
     <div id="dovenCards" class="cards-row"></div>
@@ -1654,7 +1654,7 @@ body::before{
     <button class="btn btn-call hidden" id="callButton" onclick="callAction()">Call</button>
     <input id="amountInput" class="amount-input hidden" type="number" min="1" step="1" inputmode="numeric" placeholder="Betrag">
     <button class="btn btn-bet hidden" id="betButton" onclick="betAction()">Setzen</button>
-    <button class="btn btn-raise hidden" id="raiseButton" onclick="raiseAction()">Erhöhen</button>
+    <button class="btn btn-raise hidden" id="raiseButton" onclick="raiseAction()">ErhÃ¶hen</button>
     <button class="btn btn-fold hidden" id="foldButton" onclick="foldAction()">Fold</button>
     <button class="btn btn-check hidden" id="drawButton" onclick="finishHumanDraw()">Tausch fertig</button>
   </div>
@@ -1667,14 +1667,14 @@ body::before{
 /* ======================================================
    DOVEN POKER Alpha 0.8.0
    Ziel: online-ready Architektur
-   - GameEngine: reine Spielregeln / State-Änderungen
-   - Action-Objekte: später 1:1 per WebSocket sendbar
+   - GameEngine: reine Spielregeln / State-Ãnderungen
+   - Action-Objekte: spÃ¤ter 1:1 per WebSocket sendbar
    - Renderer: nur UI-Ausgabe
-   - LocalController: Hotseat + KI lokal, später ersetzbar durch ServerClient
+   - LocalController: Hotseat + KI lokal, spÃ¤ter ersetzbar durch ServerClient
    ====================================================== */
 
 const DovenRules = (() => {
-  const suits=["♠","♥","♦","♣"];
+  const suits=["â ","â¥","â¦","â£"];
   const ranks=["2","3","4","5","6","7","8","9","10","J","Q","K","A"];
   const bettingRounds=["ROUND1_BET","ROUND3_BET","ROUND5_BET"];
   const drawRounds=["ROUND2_DRAW","ROUND4_DRAW"];
@@ -1711,7 +1711,7 @@ const DovenRules = (() => {
 
 class GameEngine{
   constructor(){this.state=this.emptyState();}
-  emptyState(){return {version:"DDV Alpha 0.7.0 Online-Test",mode:"LOCAL",phase:"SETUP",players:[],startChips:100,dealerIndex:0,turnIndex:0,deck:[],dovenCards:["?","?"],burnedCards:[],pot:0,currentBet:0,winnerText:"–",resultLines:[],log:[]};}
+  emptyState(){return {version:"DDV Alpha 0.7.0 Online-Test",mode:"LOCAL",phase:"SETUP",players:[],startChips:100,dealerIndex:0,turnIndex:0,deck:[],dovenCards:["?","?"],burnedCards:[],pot:0,currentBet:0,winnerText:"â",resultLines:[],log:[]};}
   setup({seats,startChips}){
     this.state=this.emptyState();
     this.state.startChips=startChips;
@@ -1737,16 +1737,16 @@ class GameEngine{
   resetRoundBets(){this.state.currentBet=0;this.state.players.forEach(p=>{p.contribution=0;p.acted=false;p.drawDone=false;});}
   startHand(){
     const s=this.state;
-    if(this.inGamePlayers().length<2){s.phase="SHOWDOWN";s.winnerText="Nicht genug Spieler mit Chips – Neue Chips holen oder neues Spiel starten.";return this.snapshot();}
+    if(this.inGamePlayers().length<2){s.phase="SHOWDOWN";s.winnerText="Nicht genug Spieler mit Chips â Neue Chips holen oder neues Spiel starten.";return this.snapshot();}
     this.ensureDealerEligible();
-    // Harter Reset für jede neue Hand, damit keine alten Rundenzustände hängen bleiben.
+    // Harter Reset fÃ¼r jede neue Hand, damit keine alten RundenzustÃ¤nde hÃ¤ngen bleiben.
     s.deck=DovenRules.shuffle(DovenRules.createDeck());
     s.dovenCards=["?","?"];
     s.burnedCards=[];
     s.pot=0;
     s.currentBet=0;
     s.phase="ROUND1_BET";
-    s.winnerText="–";
+    s.winnerText="â";
     s.resultLines=[];
     s.log=s.log||[];
     s.players.forEach(p=>{
@@ -1766,11 +1766,11 @@ class GameEngine{
       p.lastAction="wartet";
       for(let i=0;i<4;i++)p.hand.push(s.deck.pop());
     });
-    const blinds=this.blindPositions();if(!blinds){s.phase="SHOWDOWN";s.winnerText="Nicht genug Spieler mit Chips – Neue Chips holen oder neues Spiel starten.";return this.snapshot();}
+    const blinds=this.blindPositions();if(!blinds){s.phase="SHOWDOWN";s.winnerText="Nicht genug Spieler mit Chips â Neue Chips holen oder neues Spiel starten.";return this.snapshot();}
     this.pay(s.players[blinds.sb],1);s.players[blinds.sb].lastAction="Small Blind 1";this.pay(s.players[blinds.bb],2);s.players[blinds.bb].lastAction="Big Blind 2";s.currentBet=Math.max(s.players[blinds.sb].contribution,s.players[blinds.bb].contribution);
 
-    // Heads-Up-Regel: Wenn nur zwei aktive Plätze am Tisch sind, startet nach den Blinds der Small Blind.
-    // Bei 3–4 aktiven Spielern bleibt die bisherige Positionslogik erhalten.
+    // Heads-Up-Regel: Wenn nur zwei aktive PlÃ¤tze am Tisch sind, startet nach den Blinds der Small Blind.
+    // Bei 3â4 aktiven Spielern bleibt die bisherige Positionslogik erhalten.
     if(this.inGamePlayers().length===2){
       s.turnIndex=blinds.sb;
     }else{
@@ -1812,10 +1812,10 @@ class GameEngine{
       const selected=action.cardIndexes||[];
       this.exchangeCards(p,selected);
       p.drawDone=true;
-      if(action.type==="CHECK"){p.acted=true;p.lastAction=(selected.length?`tauscht ${selected.length} · `:"tauscht nicht · ")+"checkt";this.advanceDrawTurn();}
-      if(action.type==="CALL"){const paid=this.pay(p,this.callAmount(p.id));p.acted=true;p.lastAction=(selected.length?`tauscht ${selected.length} · `:"tauscht nicht · ")+`callt ${paid}`;this.advanceDrawTurn();}
-      if(action.type==="BET"){const amount=Math.max(1,parseInt(action.amount,10)||5);const paid=this.pay(p,amount);this.state.currentBet=p.contribution;p.acted=true;p.lastAction=(selected.length?`tauscht ${selected.length} · `:"tauscht nicht · ")+`setzt ${paid}`;this.markOthersUnacted(p.id);this.advanceDrawTurn();}
-      if(action.type==="RAISE"){const toCall=this.callAmount(p.id);const maxRaise=Math.max(0,p.chips-toCall);let raiseBy=Math.max(1,parseInt(action.amount,10)||1);raiseBy=Math.min(raiseBy,maxRaise);const paid=this.pay(p,toCall+raiseBy);this.state.currentBet=p.contribution;p.acted=true;p.lastAction=(selected.length?`tauscht ${selected.length} · `:"tauscht nicht · ")+`raist auf ${this.state.currentBet}`;this.markOthersUnacted(p.id);this.advanceDrawTurn();}
+      if(action.type==="CHECK"){p.acted=true;p.lastAction=(selected.length?`tauscht ${selected.length} Â· `:"tauscht nicht Â· ")+"checkt";this.advanceDrawTurn();}
+      if(action.type==="CALL"){const paid=this.pay(p,this.callAmount(p.id));p.acted=true;p.lastAction=(selected.length?`tauscht ${selected.length} Â· `:"tauscht nicht Â· ")+`callt ${paid}`;this.advanceDrawTurn();}
+      if(action.type==="BET"){const amount=Math.max(1,parseInt(action.amount,10)||5);const paid=this.pay(p,amount);this.state.currentBet=p.contribution;p.acted=true;p.lastAction=(selected.length?`tauscht ${selected.length} Â· `:"tauscht nicht Â· ")+`setzt ${paid}`;this.markOthersUnacted(p.id);this.advanceDrawTurn();}
+      if(action.type==="RAISE"){const toCall=this.callAmount(p.id);const maxRaise=Math.max(0,p.chips-toCall);let raiseBy=Math.max(1,parseInt(action.amount,10)||1);raiseBy=Math.min(raiseBy,maxRaise);const paid=this.pay(p,toCall+raiseBy);this.state.currentBet=p.contribution;p.acted=true;p.lastAction=(selected.length?`tauscht ${selected.length} Â· `:"tauscht nicht Â· ")+`raist auf ${this.state.currentBet}`;this.markOthersUnacted(p.id);this.advanceDrawTurn();}
       if(action.type==="FOLD"){p.folded=true;p.acted=true;p.lastAction="foldet";this.advanceBetTurn();}
       return {ok:true,state:this.snapshot()};
     }
@@ -1843,7 +1843,7 @@ class GameEngine{
     for(let i=0;i<this.state.dovenCards.length;i++){
       if(this.state.dovenCards[i]==="?")this.state.dovenCards[i]=this.state.deck.pop();
     }
-    this.state.winnerText="All In – Showdown";
+    this.state.winnerText="All In â Showdown";
     this.showdown();
     return true;
   }
@@ -1867,7 +1867,7 @@ class GameEngine{
     this.state.players.forEach(p=>{if(p.chips<=0){p.chips=0;p.busted=true;p.allIn=true;p.folded=true;p.lastAction="0 Chips";}});
     const left=this.inGamePlayers();
     if(left.length>=2){const next=this.nextEligibleAfter(this.state.dealerIndex);if(next>=0)this.state.dealerIndex=next;}
-    else{this.state.winnerText += " · Spiel pausiert: Neue Chips holen oder neues Spiel starten.";}
+    else{this.state.winnerText += " Â· Spiel pausiert: Neue Chips holen oder neues Spiel starten.";}
   }
   awardSingleWinner(){const w=this.activePlayers()[0];if(w){w.chips+=this.state.pot;this.state.winnerText=`Gewinner: ${w.name} (alle anderen Fold)`;}this.state.pot=0;this.state.phase="SHOWDOWN";this.finishHand();}
   showdown(){
@@ -1882,8 +1882,8 @@ const Renderer = (() => {
   let selectedCards=[];
   function el(id){return document.getElementById(id);}
   function setButtonVisible(id,visible){const b=el(id);if(b)b.classList.toggle("hidden",!visible);}
-  function phaseText(phase){return {HAND_START:"Hand bereit",ROUND1_BET:"Runde 1 – Einsatz vor Doven",ROUND2_DRAW:"Runde 2 – Karten wählen, mit Aktion bestätigen",ROUND3_BET:"Runde 3 – Einsatz auf neue Hand",ROUND4_DRAW:"Runde 4 – Karte wählen, mit Aktion bestätigen",ROUND5_BET:"Runde 5 – Finale Einsatzrunde",SHOWDOWN:"Showdown"}[phase]||phase;}
-  function cardHTML(card,clickable,index,selected=false){const suit=card.slice(-1),rank=card.slice(0,-1),col=(suit==="♥"||suit==="♦")?"red":"";const sel=selected?"selected":"",clk=clickable?"clickable":"",onclick=clickable?`onclick="LocalController.toggleCard(${index})"`:"";return `<div class="card ${col} ${sel} ${clk}" ${onclick}><div class="card-tl"><span class="cr">${rank}</span><span class="cs">${suit}</span></div><div class="card-center">${suit}</div><div class="card-br"><span class="cr">${rank}</span><span class="cs">${suit}</span></div></div>`;}
+  function phaseText(phase){return {HAND_START:"Hand bereit",ROUND1_BET:"Runde 1 â Einsatz vor Doven",ROUND2_DRAW:"Runde 2 â Karten wÃ¤hlen, mit Aktion bestÃ¤tigen",ROUND3_BET:"Runde 3 â Einsatz auf neue Hand",ROUND4_DRAW:"Runde 4 â Karte wÃ¤hlen, mit Aktion bestÃ¤tigen",ROUND5_BET:"Runde 5 â Finale Einsatzrunde",SHOWDOWN:"Showdown"}[phase]||phase;}
+  function cardHTML(card,clickable,index,selected=false){const suit=card.slice(-1),rank=card.slice(0,-1),col=(suit==="â¥"||suit==="â¦")?"red":"";const sel=selected?"selected":"",clk=clickable?"clickable":"",onclick=clickable?`onclick="LocalController.toggleCard(${index})"`:"";return `<div class="card ${col} ${sel} ${clk}" ${onclick}><div class="card-tl"><span class="cr">${rank}</span><span class="cs">${suit}</span></div><div class="card-center">${suit}</div><div class="card-br"><span class="cr">${rank}</span><span class="cs">${suit}</span></div></div>`;}
   function renderDoven(cards){el("dovenCards").innerHTML=cards.map(c=>c==="?"?'<div class="card card-back"></div>':cardHTML(c,false)).join("");}
   function renderPlayers(state){
     const cp=state.players[state.turnIndex];
@@ -1914,15 +1914,15 @@ const Renderer = (() => {
       html+=`<div class="player-card seat-${p.seat} ${isActive?"active":""} ${(p.folded||p.busted)?"folded":""}">
         <div class="avatar">${p.type==="AI"?"KI":(p.seat===0?"DU":"P"+(p.seat+1))}</div>
         <div class="seat-badges">${badges}</div>
-        <div class="player-head"><span>${p.name}</span><span class="chip-count">● ${p.chips}</span></div>
-        <div class="player-sub">${p.type==="AI"?"KI":"Mensch"} · Einsatz ${p.contribution}</div>
+        <div class="player-head"><span>${p.name}</span><span class="chip-count">â ${p.chips}</span></div>
+        <div class="player-sub">${p.type==="AI"?"KI":"Mensch"} Â· Einsatz ${p.contribution}</div>
         <div class="player-status">${status}</div>
         <div class="hand-area">${cards}</div>
       </div>`;
     }
     el("playersGrid").innerHTML=html;
   }
-  function render(state,legalActions=[]){if(state.phase==="SHOWDOWN"||state.phase==="HAND_START"){legalActions=[];}el("versionInfo").innerHTML=state.version;el("potInfo").innerHTML="Pot: "+state.pot;el("betInfo").innerHTML="Bet: "+state.currentBet;const active=state.players[state.turnIndex];el("activeInfo").innerHTML=state.phase==="SHOWDOWN"?"–":active?.name||"–";el("phaseInfo").innerHTML=phaseText(state.phase);el("dealerInfo").innerHTML=`Dealer: ${state.players[state.dealerIndex]?.name||"–"}`;el("winnerInfo").innerHTML=state.winnerText;el("result").innerHTML=(state.resultLines||[]).join("<br>");renderDoven(state.dovenCards);renderPlayers(state);const toCall=active?Math.max(0,state.currentBet-active.contribution):0;const bustedCount=state.players.filter(p=>p.busted||p.chips<=0).length;const canContinue=state.players.filter(p=>!p.busted&&p.chips>0).length>=2;setButtonVisible("newHandButton",(state.phase==="SHOWDOWN"||state.phase==="HAND_START")&&canContinue);setButtonVisible("rebuyButton",state.phase==="SHOWDOWN"&&bustedCount>0);setButtonVisible("newGameButton",state.phase==="SHOWDOWN");setButtonVisible("checkButton",legalActions.includes("CHECK"));setButtonVisible("callButton",legalActions.includes("CALL"));setButtonVisible("betButton",legalActions.includes("BET"));setButtonVisible("raiseButton",legalActions.includes("RAISE"));setButtonVisible("foldButton",legalActions.includes("FOLD"));setButtonVisible("drawButton",false);setButtonVisible("amountInput",legalActions.includes("BET")||legalActions.includes("RAISE"));if(el("callButton"))el("callButton").textContent=toCall>0?`Call ${toCall}`:"Call";if(el("betButton"))el("betButton").textContent="Setzen frei";if(el("raiseButton"))el("raiseButton").textContent=toCall>0?"Call + Erhöhen":"Erhöhen";if(el("amountInput")&&(legalActions.includes("BET")||legalActions.includes("RAISE"))&&!el("amountInput").value){el("amountInput").value="5";}}
+  function render(state,legalActions=[]){if(state.phase==="SHOWDOWN"||state.phase==="HAND_START"){legalActions=[];}el("versionInfo").innerHTML=state.version;el("potInfo").innerHTML="Pot: "+state.pot;el("betInfo").innerHTML="Bet: "+state.currentBet;const active=state.players[state.turnIndex];el("activeInfo").innerHTML=state.phase==="SHOWDOWN"?"â":active?.name||"â";el("phaseInfo").innerHTML=phaseText(state.phase);el("dealerInfo").innerHTML=`Dealer: ${state.players[state.dealerIndex]?.name||"â"}`;el("winnerInfo").innerHTML=state.winnerText;el("result").innerHTML=(state.resultLines||[]).join("<br>");renderDoven(state.dovenCards);renderPlayers(state);const toCall=active?Math.max(0,state.currentBet-active.contribution):0;const bustedCount=state.players.filter(p=>p.busted||p.chips<=0).length;const canContinue=state.players.filter(p=>!p.busted&&p.chips>0).length>=2;setButtonVisible("newHandButton",(state.phase==="SHOWDOWN"||state.phase==="HAND_START")&&canContinue);setButtonVisible("rebuyButton",state.phase==="SHOWDOWN"&&bustedCount>0);setButtonVisible("newGameButton",state.phase==="SHOWDOWN");setButtonVisible("checkButton",legalActions.includes("CHECK"));setButtonVisible("callButton",legalActions.includes("CALL"));setButtonVisible("betButton",legalActions.includes("BET"));setButtonVisible("raiseButton",legalActions.includes("RAISE"));setButtonVisible("foldButton",legalActions.includes("FOLD"));setButtonVisible("drawButton",false);setButtonVisible("amountInput",legalActions.includes("BET")||legalActions.includes("RAISE"));if(el("callButton"))el("callButton").textContent=toCall>0?`Call ${toCall}`:"Call";if(el("betButton"))el("betButton").textContent="Setzen frei";if(el("raiseButton"))el("raiseButton").textContent=toCall>0?"Call + ErhÃ¶hen":"ErhÃ¶hen";if(el("amountInput")&&(legalActions.includes("BET")||legalActions.includes("RAISE"))&&!el("amountInput").value){el("amountInput").value="5";}}
   return {render,getSelected:()=>selectedCards,setSelected:v=>{selectedCards=v;},clearSelection:()=>{selectedCards=[];}};
 })();
 
@@ -1940,7 +1940,7 @@ const LocalController = (() => {
   function render(){const s=state();const p=s.players[s.turnIndex];const legal=p&&p.type==="HUMAN"?engine.legalActions(p.id):[];Renderer.render(s,legal);}
   function renderSeatConfig(){const n=parseInt(document.getElementById("playerCount").value,10);let html="";for(let i=0;i<n;i++){html+=`<label>Spieler ${i+1}<select id="seatType${i}"><option value="HUMAN" ${i===0?"selected":""}>Mensch</option><option value="AI" ${i>0?"selected":""}>KI</option></select></label>`;}document.getElementById("seatConfig").innerHTML=html;}
   function startGame(){const n=parseInt(document.getElementById("playerCount").value,10);const chips=Math.max(20,parseInt(document.getElementById("startChips").value,10)||100);const seats=[];for(let i=0;i<n;i++)seats.push({type:document.getElementById(`seatType${i}`).value,name:`Spieler ${i+1}`});engine.setup({seats,startChips:chips});document.getElementById("configPanel").style.display="none";document.getElementById("table").style.display="";dealCards();}
-  function rebuyBustedPlayers(){clearAITimer();const s=state();const amount=parseInt(prompt("Neue Chips für alle Spieler mit 0 Chips:", s.startChips||100),10);if(!Number.isFinite(amount)||amount<=0)return;engine.rebuyBusted(amount);render();}
+  function rebuyBustedPlayers(){clearAITimer();const s=state();const amount=parseInt(prompt("Neue Chips fÃ¼r alle Spieler mit 0 Chips:", s.startChips||100),10);if(!Number.isFinite(amount)||amount<=0)return;engine.rebuyBusted(amount);render();}
   function newGameSetup(){clearAITimer();document.getElementById("table").style.display="none";document.getElementById("configPanel").style.display="";renderSeatConfig();}
   function dealCards(){
     clearAITimer();
@@ -1948,12 +1948,12 @@ const LocalController = (() => {
     const amountEl=document.getElementById("amountInput");
     if(amountEl)amountEl.value="";
 
-    // Der Neue-Hand-Button soll genau einen neuen Deal auslösen.
-    // Falls noch ein alter Zwischenstatus hängt, wird vor dem Deal sauber auf Handstart gesetzt.
+    // Der Neue-Hand-Button soll genau einen neuen Deal auslÃ¶sen.
+    // Falls noch ein alter Zwischenstatus hÃ¤ngt, wird vor dem Deal sauber auf Handstart gesetzt.
     if(engine.state.phase==="SHOWDOWN" || engine.state.phase==="HAND_START"){
       engine.startHand();
     }else{
-      console.warn("Neue Hand blockiert: aktuelle Hand läuft noch", engine.state.phase);
+      console.warn("Neue Hand blockiert: aktuelle Hand lÃ¤uft noch", engine.state.phase);
       return;
     }
 
@@ -2017,73 +2017,6 @@ const LocalController = (() => {
   function action(type,amount){const p=current();if(!p)return;send({type,playerId:p.id,amount,cardIndexes:Renderer.getSelected()});}
   function askChipAmount({title,min,max,defaultValue}){
     const box=document.getElementById("amountInput");
-    const raw=box&&box.value?box.value:prompt(`${title}\nMinimum: ${min} · Maximum: ${max}`, defaultValue);
+    const raw=box&&box.value?box.value:prompt(`${title}\nMinimum: ${min} Â· Maximum: ${max}`, defaultValue);
     if(raw===null)return null;
-    const amount=parseInt(raw,10);
-    if(!Number.isFinite(amount)||amount<min){alert(`Bitte gib einen gültigen Betrag zwischen ${min} und ${max} Chips ein.`);return null;}
-    return Math.min(amount,max);
-  }
-  function betPrompt(){
-    const p=current();if(!p)return;
-    const maxBet=p.chips;
-    if(maxBet<=0)return;
-    const amount=askChipAmount({title:"Wie viele Chips möchtest du setzen?",min:1,max:maxBet,defaultValue:Math.min(5,maxBet)});
-    if(amount===null)return;
-    action("BET",amount);
-  }
-  function raisePrompt(){
-    const p=current();if(!p)return;
-    const toCall=engine.callAmount(p.id);
-    const maxRaise=Math.max(0,p.chips-toCall);
-    if(maxRaise<=0)return;
-    const amount=askChipAmount({title:`Du callst ${toCall}. Zusätzliche Erhöhung eingeben:`,min:1,max:maxRaise,defaultValue:Math.min(5,maxRaise)});
-    if(amount===null)return;
-    action("RAISE",amount);
-  }
-  function drawDone(){const p=current();if(!p)return;send({type:"DRAW_DONE",playerId:p.id,cardIndexes:Renderer.getSelected()});}
-  return {renderSeatConfig,startGame,dealCards,toggleCard,check:()=>action("CHECK"),call:()=>action("CALL"),bet:betPrompt,raise:raisePrompt,fold:()=>action("FOLD"),drawDone,rebuyBustedPlayers,newGameSetup};
-})();
-
-/* Alte Button-Namen bleiben als Wrapper erhalten, damit das HTML stabil bleibt. */
-function renderSeatConfig(){LocalController.renderSeatConfig();}
-function startGame(){LocalController.startGame();}
-function dealCards(){
-  const b=document.getElementById("newHandButton");
-  if(b){b.disabled=true;setTimeout(()=>{b.disabled=false;},350);}
-  LocalController.dealCards();
-}
-function checkAction(){LocalController.check();}
-function callAction(){LocalController.call();}
-function betAction(){LocalController.bet();}
-function raiseAction(){LocalController.raise();}
-function foldAction(){LocalController.fold();}
-function finishHumanDraw(){LocalController.drawDone();}
-function rebuyBustedPlayers(){LocalController.rebuyBustedPlayers();}
-function newGameSetup(){LocalController.newGameSetup();}
-
-
-/* DDV Alpha 0.7.0 — Supabase Online-Verbindungstest */
-const DDV_ONLINE_CONFIG={url:"https://ugqbpvbgfrlrxrzafsth.supabase.co",key:"sb_publishable_3KOdg_-9b1Ycg2YFoNiU7A_fuypX5cm"};
-let ddvSupabase=null,ddvChannel=null,ddvRoomCode="",ddvPlayerId="p_"+Math.random().toString(36).slice(2,10),ddvPlayerName="";
-function onlineEl(id){return document.getElementById(id);}
-function setOnlineStatus(text,mode=""){const box=onlineEl("onlineStatus");if(!box)return;box.textContent=text;box.classList.remove("connected","error");if(mode)box.classList.add(mode);}
-function addOnlineLog(text){const box=onlineEl("onlineLog");if(!box)return;const time=new Date().toLocaleTimeString("de-DE",{hour:"2-digit",minute:"2-digit",second:"2-digit"});box.innerHTML=`<div>[${time}] ${text}</div>`+box.innerHTML;}
-function updateOnlinePlayers(){const box=onlineEl("onlinePlayers");if(!box)return;if(!ddvChannel){box.textContent="Spieler online: –";return;}const state=ddvChannel.presenceState();const players=[];Object.values(state).forEach(list=>list.forEach(meta=>{if(meta&&meta.name)players.push(meta.name);}));box.textContent=players.length?"Spieler online: "+players.join(", "):"Spieler online: –";}
-function ensureSupabaseClient(){if(ddvSupabase)return true;if(!window.supabase){setOnlineStatus("Online: Supabase-Bibliothek konnte nicht geladen werden.","error");addOnlineLog("Fehler: Supabase JS nicht gefunden.");return false;}ddvSupabase=window.supabase.createClient(DDV_ONLINE_CONFIG.url,DDV_ONLINE_CONFIG.key);return true;}
-function normalizeRoomCode(value){return(value||"").toString().trim().toUpperCase().replace(/[^A-Z0-9]/g,"").slice(0,8);}
-function randomRoomCode(){const chars="ABCDEFGHJKLMNPQRSTUVWXYZ23456789";let code="";for(let i=0;i<4;i++)code+=chars[Math.floor(Math.random()*chars.length)];return code;}
-function readOnlineName(){const input=onlineEl("onlineName");const fallback="Spieler-"+ddvPlayerId.slice(-4);ddvPlayerName=(input?.value||"").trim().slice(0,18)||fallback;if(input&&!input.value)input.value=ddvPlayerName;return ddvPlayerName;}
-async function connectOnlineRoom(roomCode){if(!ensureSupabaseClient())return;roomCode=normalizeRoomCode(roomCode);if(!roomCode){setOnlineStatus("Online: Bitte Raumcode eingeben.","error");return;}await leaveOnlineRoom(false);readOnlineName();ddvRoomCode=roomCode;if(onlineEl("onlineRoomCode"))onlineEl("onlineRoomCode").value=roomCode;setOnlineStatus("Online: verbinde mit Raum "+roomCode+" ...");addOnlineLog("Verbinde mit Raum "+roomCode+"...");
-ddvChannel=ddvSupabase.channel("ddv-room-"+roomCode,{config:{broadcast:{self:true},presence:{key:ddvPlayerId}}});
-ddvChannel.on("presence",{event:"sync"},()=>updateOnlinePlayers()).on("presence",{event:"join"},({newPresences})=>{const names=(newPresences||[]).map(p=>p.name).filter(Boolean).join(", ");if(names)addOnlineLog(names+" ist beigetreten.");updateOnlinePlayers();}).on("presence",{event:"leave"},({leftPresences})=>{const names=(leftPresences||[]).map(p=>p.name).filter(Boolean).join(", ");if(names)addOnlineLog(names+" hat den Raum verlassen.");updateOnlinePlayers();}).on("broadcast",{event:"test_message"},({payload})=>{if(payload)addOnlineLog((payload.name||"Unbekannt")+": "+(payload.message||"Test"));});
-ddvChannel.subscribe(async(status)=>{if(status==="SUBSCRIBED"){await ddvChannel.track({playerId:ddvPlayerId,name:ddvPlayerName,joinedAt:new Date().toISOString()});setOnlineStatus("Online: verbunden mit Raum "+roomCode,"connected");addOnlineLog("Verbunden. Öffne diese Datei auf einem zweiten Gerät und tritt Raum "+roomCode+" bei.");updateOnlinePlayers();}if(status==="CHANNEL_ERROR"||status==="TIMED_OUT"){setOnlineStatus("Online: Verbindung fehlgeschlagen ("+status+")","error");addOnlineLog("Verbindungsfehler: "+status);}});}
-function createOnlineRoom(){const code=randomRoomCode();if(onlineEl("onlineRoomCode"))onlineEl("onlineRoomCode").value=code;connectOnlineRoom(code);}
-function joinOnlineRoom(){connectOnlineRoom(onlineEl("onlineRoomCode")?.value);}
-async function sendOnlineTestMessage(){if(!ddvChannel){setOnlineStatus("Online: erst Raum erstellen oder beitreten.","error");return;}readOnlineName();await ddvChannel.send({type:"broadcast",event:"test_message",payload:{playerId:ddvPlayerId,name:ddvPlayerName,message:"Hallo aus DDV!"}});}
-async function leaveOnlineRoom(showLog=true){if(ddvChannel&&ddvSupabase){try{await ddvChannel.untrack();await ddvSupabase.removeChannel(ddvChannel);}catch(e){console.warn(e);}}ddvChannel=null;ddvRoomCode="";updateOnlinePlayers();if(showLog){setOnlineStatus("Online: nicht verbunden");addOnlineLog("Verbindung getrennt.");}}
-window.addEventListener("beforeunload",()=>{if(ddvChannel)ddvChannel.untrack();});
-
-renderSeatConfig();
-</script>
-</body>
-</html>
+    const 
